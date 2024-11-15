@@ -1,5 +1,7 @@
 const userFullName = require("./name.js");
-const hobbies = require ("./hobbies.js")
+const userHobbies = require ("./hobbies.js")
+const people = require ("./people.js")
 
 console.log(userFullName('Arianna', 'Cristiani'))
-console.log(hobbies('drawing', 'painting' , 'gardening'))
+console.log(userHobbies('drawing', 'painting' , 'gardening'))
+console.log(people())

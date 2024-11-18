@@ -2,10 +2,14 @@ const userFullName = require("./name.js");
 const userHobbies = require ("./hobbies.js")
 
 function people () {
-    const {firstName, lastName} = userFullName
-    const {hobbies}= userHobbies
+
+    const person = {
+		...userFullName ('Arianna','Cristiani'),
+		...userHobbies ('drawing', 'painting' , 'gardening'),
+		
+	}
     
-    return {firstName, lastName, hobbies}
+    return person
 }
 
 module.exports = people
